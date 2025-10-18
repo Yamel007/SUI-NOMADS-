@@ -1,0 +1,14 @@
+[package]
+name = "SuiNomads"
+version = "0.0.1"
+edition = "2024"
+authors = ["abba"]
+
+[addresses]
+sui_nomads = "0x0"  # This will be replaced by your actual address after publishing
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "main" }
+
+[dev-dependencies]
+MoveStdlib = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/move-stdlib", rev = "main" }
